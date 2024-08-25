@@ -2,12 +2,17 @@ class Car{
 
     String company;
     int model;
+    private int reg = 51;
 
     Car(String company , int model){
         this.company = company;
         this.model = model;
 
        System.out.println("Created car of " + this.company + " model: " + this.model);
+    }
+
+    public void getReg(){
+        System.out.println("Registration: " + this.reg);
     }
 
 }
